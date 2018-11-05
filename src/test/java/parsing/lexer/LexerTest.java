@@ -1,6 +1,6 @@
 package parsing.lexer;
 
-public class Test {
+public class LexerTest {
     //java Test '[a,b]'
     public static void main(String... args) {
         ListLexer lexer = new ListLexer(args[0]);
