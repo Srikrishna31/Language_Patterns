@@ -24,7 +24,7 @@ public abstract class LLKParser {
     }
 
     public Token LT(int i) {
-        return lookahead[(p+i -1)%5];
+        return lookahead[(p + i - 1) % k];
     }
 
     public int LA(int i) {

@@ -7,7 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Language_Patterns" />
+        <module name="language_patterns" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="language_patterns" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

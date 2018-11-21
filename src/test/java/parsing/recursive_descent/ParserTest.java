@@ -4,9 +4,15 @@ import parsing.lexer.ListLexer;
 
 public class ParserTest {
     public static void main(String... args) {
-        ListLexer lexer = new ListLexer(args[0]);
+        runTest("[a,b]");
+        runTest("[a,]");
+    }
+
+    private static void runTest(String input) {
+        ListLexer lexer = new ListLexer(input);
         ListParser parser = new ListParser(lexer);
 
         parser.list();
+
     }
 }
