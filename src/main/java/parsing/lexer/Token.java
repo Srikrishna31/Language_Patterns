@@ -10,7 +10,8 @@ public class Token {
     }
 
     @Override public String toString() {
-       String tname = ListLexer.tokenNames[type];
+       String tname = ListLexer.tokenNames.get(type);
        return "<'" + text + "' ," + tname+">";
     }
 }
+

@@ -13,7 +13,7 @@ public class LookAheadParserTest {
     }
 
     private static void test1() {
-        runTest("[a,b=c,[d,e]]");
+        runTest("[a,b=c,,[d,e]]");
     }
     private static void runTest(String input) {
         LookAheadLexer lexer = new LookAheadLexer(input);
